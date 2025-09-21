@@ -4,6 +4,8 @@ This project implements the ATG assignment: a LangGraph-style debate DAG where t
 alternate for 8 rounds, memory nodes maintain short summaries, and a Judge node produces a final verdict.
 This version runs locally on Windows inside a Python venv and uses deterministic simulated agent generators (no LLM required).
 
+I also included a Demo Video for better understanding please have a look on above code files, there is a file included **Demo video.wmb**
+
 ## Files
 - `main.py` — CLI entry point.
 - `nodes.py` — node implementations (UserInput, Agent A/B, Memory, Judge).
@@ -101,6 +103,7 @@ Reason: sci_score=10, phil_score=6 -> winner: Scientist
 
 Full log written to: logs/debate_log_20250921_123456.txt
 DAG diagram generated: dag.png
+
 
 
 You’ll also get a full JSON-state dump and step-by-step logs in the log file.
