@@ -1,0 +1,19 @@
+// Debate LangGraph DAG
+digraph {
+	START
+	UserInput [label="UserInputNode
+(get topic)"]
+	Scientist
+	Memory
+	Philosopher
+	Judge
+	END
+	START -> UserInput
+	UserInput -> Scientist
+	Scientist -> Memory
+	Memory -> Philosopher
+	Philosopher -> Memory
+	Memory -> Scientist [label="loop until round 8"]
+	Memory -> Judge [label="if rounds == 8"]
+	Judge -> END
+}

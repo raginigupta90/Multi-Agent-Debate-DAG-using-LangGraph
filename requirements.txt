@@ -1,0 +1,4 @@
+# use pre-release LangGraph as recommended by docs, but this project uses only graph control & simulated agents
+langgraph>=0.0.37
+graphviz
+python-dateutil
